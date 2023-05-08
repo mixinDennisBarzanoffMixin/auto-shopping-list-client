@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "613454711754",
+    "project_id": "auto-shopping-list-651a9",
+    "storage_bucket": "auto-shopping-list-651a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613454711754:android:9ed8817c0eff6256ad5d33",
+        "android_client_info": {
+          "package_name": "com.example.auto_shopping_list_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613454711754-ps6egbl6mi22515b292u793u7rbsckt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqcWK8W2ql8pN81pCA_VHBmvdXV9-3WjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613454711754-ps6egbl6mi22515b292u793u7rbsckt8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "613454711754-duqq42lt6arln7ddtpsm3837p6iu50f3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.autoShoppingListClient"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

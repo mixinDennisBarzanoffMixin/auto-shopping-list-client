@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message ProductLocation {
+  string product_name = 1 [json_name = "name"];
+  float x = 2;
+  float y = 3;
+}
+
+message Store {
+  string id = 1;
+  string name = 2;
+  repeated ProductLocation product_locations = 3 [json_name = "product_location"];
+}
+
+message Stores {
+  repeated Store stores = 1;
+}
