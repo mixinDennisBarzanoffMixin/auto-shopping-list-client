@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:auto_shopping_list_client/protobuf/store.pb.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -7,8 +9,8 @@ final storesRef = FirebaseFirestore.instance
       fromFirestore: (snapshots, _) {
         print(snapshots.data());
         return Store(
-        id: snapshots.id,
-      )..mergeFromProto3Json(snapshots.data()!);
+          id: snapshots.id,
+        )..mergeFromProto3Json(snapshots.data()!);
       },
-      toFirestore: (store, _) => store.writeToJsonMap(),
+      toFirestore: (store, _) => jsonDecode(jsonEncode(store.toProto3Json())),
     );

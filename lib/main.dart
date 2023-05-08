@@ -101,7 +101,7 @@ class _AppState extends State<App> {
                               }, 
                               onShouldDelete: (ProductLocation locaion) {
                                 data.first.productLocations.remove(locaion);
-                                storesRef.doc(data.first.id).update(jsonDecode(jsonEncode(data.first.toProto3Json())));
+                                storesRef.doc(data.first.id).set(data.first);
                               },
                               locations: productLocationsNotListed, 
                               name: data.first.name, 
