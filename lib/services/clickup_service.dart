@@ -28,7 +28,7 @@ class ClickUpApi {
         for (final task in tasks)
           ShoppingItem(
             name: task['name'],
-            grams: double.parse(task['custom_fields'].where((element) => element['name'] == 'Grams').first['value']),
+            grams: double.parse(task['custom_fields'].where((element) => element['name'] == 'Grams').first['value'] ?? '0'),
           )
       ]);
     } else {
